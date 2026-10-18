@@ -1,0 +1,5 @@
+-keepattributes *Annotation*, InnerClasses
+-dontnote kotlinx.serialization.**
+-keep,includedescriptorclasses class com.pindou.studio.**$$serializer { *; }
+-keepclassmembers class com.pindou.studio.** { *** Companion; }
+-keepclasseswithmembers class com.pindou.studio.** { kotlinx.serialization.KSerializer serializer(...); }

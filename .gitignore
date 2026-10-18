@@ -1,0 +1,23 @@
+# Gradle / Android 构建产物
+build/
+.gradle/
+.kotlin/
+captures/
+*.iml
+local.properties
+
+# 签名文件（绝不入库）
+*.jks
+*.keystore
+keystore.properties
+
+# 只保留 release APK，调试包不入库
+dist/*-debug.apk
+
+# IDE / 系统
+.idea/
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
